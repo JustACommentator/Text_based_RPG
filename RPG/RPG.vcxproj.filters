@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Quelldateien">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Headerdateien">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Ressourcendateien">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Headerdateien\Entities">
+      <UniqueIdentifier>{48a29db8-32d6-4690-a145-968b8fa60d93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headerdateien\Items">
+      <UniqueIdentifier>{29e5975b-c003-4d3a-99b6-148487713220}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headerdateien\Utility">
+      <UniqueIdentifier>{848fc759-76f9-4700-9ef7-ede6ff26c506}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\Entities">
+      <UniqueIdentifier>{2bfca42b-99d2-4e47-a136-86e3d9bb59f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\Items">
+      <UniqueIdentifier>{332f2038-9f51-4b9a-95a1-f34fed38c6bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\Utility">
+      <UniqueIdentifier>{7d8a5d45-2035-4d42-8443-055c9473558e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headerdateien\Combat">
+      <UniqueIdentifier>{b24ee630-f7e4-428c-bce9-8b52bf07d875}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headerdateien\Combat\Status">
+      <UniqueIdentifier>{1e2f40b0-6132-4e35-ba84-1180c5bc8f0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headerdateien\Combat\Spells">
+      <UniqueIdentifier>{302e52c6-d7a0-42c0-b89d-f56d31cc2fce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\Combat">
+      <UniqueIdentifier>{00901f50-d506-413b-a30f-c394085c509e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\Combat\Status">
+      <UniqueIdentifier>{aaec5e65-85ee-45e2-97e5-945f583055f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headerdateien\Items\Equippable">
+      <UniqueIdentifier>{a3a61de8-33ab-4de3-9765-80e6a5d57ff1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headerdateien\Items\Inventory">
+      <UniqueIdentifier>{ff3bb3b9-a44f-4dbf-b912-610238d4a69d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\Items\Equippable">
+      <UniqueIdentifier>{b8455045-cc55-450b-8eae-9b8f03a99aed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\Items\Inventory">
+      <UniqueIdentifier>{659ff477-60b3-4b17-b6ee-ea3bad4d763d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headerdateien\Items\Consumable">
+      <UniqueIdentifier>{173cca03-b4dc-47c5-94b6-b1fffb73ea2a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\Items\Consumable">
+      <UniqueIdentifier>{09ebeb50-b611-401d-bdf7-92d95c76c29e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ressourcendateien\sounds">
+      <UniqueIdentifier>{26a25220-aa4b-40bf-9c2a-2bd0a3e13129}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headerdateien\Areas">
+      <UniqueIdentifier>{8e6e559c-9f7c-4b6a-aefb-f4e86fae1cc4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Entity.h">
+      <Filter>Headerdateien\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Item.h">
+      <Filter>Headerdateien\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Status.h">
+      <Filter>Headerdateien\Combat\Status</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Headerdateien\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Spell.h">
+      <Filter>Headerdateien\Combat\Spells</Filter>
+    </ClInclude>
+    <ClInclude Include="Combat.h">
+      <Filter>Headerdateien\Combat</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility.h">
+      <Filter>Headerdateien\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy.h">
+      <Filter>Headerdateien\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Quest.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyItem.h">
+      <Filter>Headerdateien\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Weapon.h">
+      <Filter>Headerdateien\Items\Equippable</Filter>
+    </ClInclude>
+    <ClInclude Include="Equippable.h">
+      <Filter>Headerdateien\Items\Equippable</Filter>
+    </ClInclude>
+    <ClInclude Include="Armor.h">
+      <Filter>Headerdateien\Items\Equippable</Filter>
+    </ClInclude>
+    <ClInclude Include="Accessory.h">
+      <Filter>Headerdateien\Items\Equippable</Filter>
+    </ClInclude>
+    <ClInclude Include="Inventory.h">
+      <Filter>Headerdateien\Items\Inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="Consumable.h">
+      <Filter>Headerdateien\Items\Consumable</Filter>
+    </ClInclude>
+    <ClInclude Include="HealthPotion.h">
+      <Filter>Headerdateien\Items\Consumable</Filter>
+    </ClInclude>
+    <ClInclude Include="ManaPotion.h">
+      <Filter>Headerdateien\Items\Consumable</Filter>
+    </ClInclude>
+    <ClInclude Include="CurePotion.h">
+      <Filter>Headerdateien\Items\Consumable</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemID.h">
+      <Filter>Headerdateien\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Ally.h">
+      <Filter>Headerdateien\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseArea.h">
+      <Filter>Headerdateien\Areas</Filter>
+    </ClInclude>
+    <ClInclude Include="PointOfInterest.h">
+      <Filter>Headerdateien\Areas</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Entity.cpp">
+      <Filter>Quelldateien\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Quelldateien\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Combat.cpp">
+      <Filter>Quelldateien\Combat</Filter>
+    </ClCompile>
+    <ClCompile Include="Accessory.cpp">
+      <Filter>Quelldateien\Items\Equippable</Filter>
+    </ClCompile>
+    <ClCompile Include="Armor.cpp">
+      <Filter>Quelldateien\Items\Equippable</Filter>
+    </ClCompile>
+    <ClCompile Include="Weapon.cpp">
+      <Filter>Quelldateien\Items\Equippable</Filter>
+    </ClCompile>
+    <ClCompile Include="Equippable.cpp">
+      <Filter>Quelldateien\Items\Equippable</Filter>
+    </ClCompile>
+    <ClCompile Include="Inventory.cpp">
+      <Filter>Quelldateien\Items\Inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="HealthPotion.cpp">
+      <Filter>Quelldateien\Items\Consumable</Filter>
+    </ClCompile>
+    <ClCompile Include="Consumable.cpp">
+      <Filter>Quelldateien\Items\Consumable</Filter>
+    </ClCompile>
+    <ClCompile Include="ManaPotion.cpp">
+      <Filter>Quelldateien\Items\Consumable</Filter>
+    </ClCompile>
+    <ClCompile Include="CurePotion.cpp">
+      <Filter>Quelldateien\Items\Consumable</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyItem.cpp">
+      <Filter>Quelldateien\Items</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="..\..\..\..\Downloads\text_sound.wav">
+      <Filter>Ressourcendateien\sounds</Filter>
+    </Media>
+  </ItemGroup>
+</Project>
