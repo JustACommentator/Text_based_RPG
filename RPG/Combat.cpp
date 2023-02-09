@@ -19,14 +19,15 @@ Combat::Combat(list<Entity*> _participants)
         });
 
     queue<Entity*> entityQueue;
-    Entity* player = nullptr;
+    Entity* playerTurn = nullptr;
 
     for (Entity* e : participants)
     {
         if (Player* p = dynamic_cast<Player*>(e))
         {
-            player = e;
+            playerTurn = e;
             allies.push_back(e);
+            p->setCurrentState(IN_COMBAT);
         }
         else if (Ally* a = dynamic_cast<Ally*>(e))
         {
@@ -49,7 +50,7 @@ Combat::Combat(list<Entity*> _participants)
         currentTurn = entityQueue.front();
         entityQueue.pop();
 
-        if (currentTurn == player) // player turn
+        if (currentTurn == playerTurn) // player turn
         {
             dynamic_cast<Player*>(currentTurn)->turn(allies, enemies);
         }
@@ -65,4 +66,5 @@ Combat::Combat(list<Entity*> _participants)
         if (currentTurn->getHealth() > 0) // if still alive, move to end of queue
             entityQueue.push(currentTurn);
     }
+    dynamic_cast<Player*>(playerTurn)->setCurrentState(IN_OVERWORLD);
 }

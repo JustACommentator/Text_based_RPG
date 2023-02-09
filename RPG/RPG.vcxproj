@@ -149,6 +149,7 @@
     <ClInclude Include="BaseArea.h" />
     <ClInclude Include="Combat.h" />
     <ClInclude Include="CurePotion.h" />
+    <ClInclude Include="CurrentState.h" />
     <ClInclude Include="Enemy.h" />
     <ClInclude Include="Entity.h" />
     <ClInclude Include="Equippable.h" />

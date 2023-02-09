@@ -4,9 +4,11 @@
 
 using namespace std;
 
-Player::Player(string _name) :
+Player::Player(string _name, BaseArea* _currentArea, CurrentState _currentState) :
 	Entity(_name, 1, 20, 100, 100, 100, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr)
 {
+	currentState = _currentState;
+	currentArea = _currentArea;
 	currentXP = 0;
 	XPTillNext = 1000;
 	money = 10;
@@ -66,6 +68,7 @@ const int Player::calculateXP()
 void Player::kill()
 {
 	alive = false;
+	currentState = IN_OVERWORLD;
 
 	cout << endl << endl << endl << endl;
 	for (int i = 0; i < 3; i++)
@@ -74,8 +77,7 @@ void Player::kill()
 		Sleep(350);
 	}
 
-	util::slow << "It seems like your adventure has come to an abrupt end, Adventurer. "
-		"Ded:}";
+	util::slow << "It seems like your adventure has come to an abrupt end, Adventurer. May thy light shine again... ";
 	while (true)
 		if (GetKeyState(' ') & 0x8000/*Check if high-order bit is set (1 << 15)*/)
 			break;

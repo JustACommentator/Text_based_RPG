@@ -14,12 +14,13 @@ protected:
 	std::string description;
 	std::list<Item*> items;
 	std::list<PointOfInterest*> pointsOfInterest;
+	bool canBeEntered;
 
 public:
 
-	BaseArea(std::string _name, std::string _description, std::list<PointOfInterest*> _pointsOfInterest,
+	BaseArea(std::string _name, std::string _description, bool _canBeEntered, std::list<PointOfInterest*> _pointsOfInterest,
 		std::list<Entity*> _entities, std::list<Item*> _items, std::list<BaseArea>) :
-		name(_name), description(description), pointsOfInterest(_pointsOfInterest),
+		name(_name), description(description), canBeEntered(_canBeEntered), pointsOfInterest(_pointsOfInterest),
 		entities(_entities), items(_items) {};
 
 	std::list<Entity*> getEntities() { return entities; }
